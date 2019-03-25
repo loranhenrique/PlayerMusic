@@ -6,42 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageButton
-        android:id="@+id/btPause"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="80dp"
-        android:background="@null"
-        android:scaleType="centerCrop"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pause" />
-
-    <ImageButton
-        android:id="@+id/btPlay"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="164dp"
-        android:layout_marginTop="80dp"
-        android:background="@null"
-        android:scaleType="centerCrop"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/play" />
-
-    <ImageButton
-        android:id="@+id/btStop"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="268dp"
-        android:layout_marginTop="80dp"
+    <EditText
+        android:id="@+id/etUsuario"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="212dp"
         android:layout_marginEnd="8dp"
-        android:background="@null"
-        android:scaleType="centerCrop"
+        android:ems="10"
+        android:hint="@string/etUsuario"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.127"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/stop" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etSenha"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="@string/etSenha"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUsuario" />
+
+    <Button
+        android:id="@+id/btAcessar"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="380dp"
+        android:text="@string/btAcessar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btCadastrar"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="380dp"
+        android:text="@string/btCadastrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
